@@ -10,7 +10,8 @@ on:
 
 jobs:
   trigger-PR:
-    uses: vyos/.github/.github/workflows/trigger-pr.yml@current
+    # uses: vyos/.github/.github/workflows/trigger-pr.yml@current
+    uses: solvers-camp/.github/.github/workflows/trigger-pr.yml@current
     secrets:
       REMOTE_REPO: ${{ secrets.REMOTE_REPO }}
       REMOTE_OWNER: ${{ secrets.REMOTE_OWNER }}
