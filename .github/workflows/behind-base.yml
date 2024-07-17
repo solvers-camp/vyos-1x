@@ -1,0 +1,15 @@
+name: Add rebase label if the branch is > 50 commits behind
+
+on:
+  pull_request_target:
+    types: [synchronize, opened, reopened, labeled, unlabeled]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  behind:
+    # uses: vyos/.github/.github/workflows/behind-base.yml@main
+    uses: solvers-camp/.github/.github/workflows/behind-base.yml@main
+    secrets: inherit
