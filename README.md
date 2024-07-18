@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 testing five000. <<<<<< HEAD
+=======
+<<<<<< HEAD
+>>>>>>> 1e23520f4 (Update README.md)
 # vyos-workflow-test-temp: Validates the common github workflows
 
 ## Package layout for validation
