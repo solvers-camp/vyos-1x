@@ -1,4 +1,25 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 # vyos-1x: VyOS command definitions, configuration scripts, and data 
+=======
+456<<<<<< HEAD
+=======
+123 <<<<<< HEAD
+>>>>>>> d8ec11368 (public vyos-1x)
+# vyos-workflow-test-temp: Validates the common github workflows
+
+## Package layout for validation
+
+```
+data                   # Jinja2 templates
+src
+    validators/ # Value validators
+    helpers/    # Misc helpers
+    tests/      # Unit tests
+```
+=======
+# vyos-1x: VyOS command definitions, configuration scripts, and data
+>>>>>>> d42d0ed19 (Update README.md)
 
 VyOS 1.1.x had its codebase split into way too many submodules for no good
 reason, which made it hard to navigate or write meaningful changelogs. As the
