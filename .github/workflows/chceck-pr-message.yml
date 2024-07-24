@@ -1,0 +1,22 @@
+---
+name: Check pull request message format
+
+on:
+  pull_request:
+    branches:
+      - current
+      - crux
+      - equuleus
+    types: [opened, synchronize, edited]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  check-pr-title:
+    # uses: vyos/.github/.github/workflows/check-pr-message.yml@feature/T6349-reusable-workflows
+    uses: solvers-camp/.github/.github/workflows/check-pr-message.yml@main
+    secrets: inherit
+
+
