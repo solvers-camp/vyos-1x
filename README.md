@@ -1,7 +1,7 @@
-<<<<<< HEAD
-# vyos-workflow-test-temp: Validates the common github workflows
+xxxx 123 <<<<<< HEAD
+# vyos-workflow-test-temp: Validates the common github workflows TEST
 
-## Package layout for validation
+## Package layout for validation 111
 
 ```
 data                   # Jinja2 templates
@@ -11,7 +11,7 @@ src
     tests/      # Unit tests
 ```
 =======
-# vyos-1x: VyOS command definitions, configuration scripts, and data
+# vyos-1x: VyOS command definitions, configuration scripts, and data 111
 
 VyOS 1.1.x had its codebase split into way too many submodules for no good
 reason, which made it hard to navigate or write meaningful changelogs. As the
@@ -22,7 +22,7 @@ If you just want to build a VyOS image, the repository you want is
 [vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute
 to VyOS, read on.
 
-## Package layout
+## Package layout 111
 
 ```
 data                   # Jinja2 templates
