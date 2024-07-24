@@ -6,7 +6,10 @@ on:
         - closed
       branches:
         - current
+<<<<<<< HEAD
         - circinus
+=======
+>>>>>>> 1e945c4bd8e5f12395ce17aae3726af17c646680
     workflow_dispatch:
 
 jobs:
