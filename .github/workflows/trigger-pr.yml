@@ -6,6 +6,7 @@ on:
         - closed
       branches:
         - current
+        - circinus
     workflow_dispatch:
 
 jobs:
