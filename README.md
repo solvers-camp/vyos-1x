@@ -68,7 +68,7 @@ The guidelines in a nutshell: ---
 * Use a template processor when the format is more complex than just one line
   (our standard is Jinja2)
 
-## Tests
+## Tests ---
 
 Tests are executed at build time, you can also execute them by hand with:
 
