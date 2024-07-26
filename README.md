@@ -1,10 +1,10 @@
-<<<<<< HEAD
+123 <<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
 
-## Package layout for validation
+## Package layout for validation - hello 
 
 ```
-data                   # Jinja2 templates
+data                   # Jinja2 templates - hello
 src
     validators/ # Value validators
     helpers/    # Misc helpers
@@ -22,7 +22,7 @@ If you just want to build a VyOS image, the repository you want is
 [vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute
 to VyOS, read on.
 
-## Package layout
+## Package layout 111
 
 ```
 data                   # Jinja2 templates
