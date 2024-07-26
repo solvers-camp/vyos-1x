@@ -58,7 +58,7 @@ time, so a package with malformed interface definitions will not build.
 
 ## Configuration script
 
-The guidelines in a nutshell:
+The guidelines in a nutshell: ---
 
 * Use separate functions for retrieving configuration data, validating it, and
   generating taret config, see our
