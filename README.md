@@ -1,10 +1,10 @@
 123 <<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
 
-## Package layout for validation - hello
+## Package layout for validation - hello 
 
 ```
-data                   # Jinja2 templates
+data                   # Jinja2 templates - hello
 src
     validators/ # Value validators
     helpers/    # Misc helpers
