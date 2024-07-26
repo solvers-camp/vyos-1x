@@ -4,7 +4,7 @@
 ## Package layout for validation - hello 
 
 ```
-data                   # Jinja2 templates - hello
+data                   # Jinja2 templates
 src - hello
     validators/ # Value validators --
     helpers/    # Misc helpers
