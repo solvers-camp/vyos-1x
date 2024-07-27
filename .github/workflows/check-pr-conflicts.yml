@@ -12,5 +12,5 @@ jobs:
   check-pr-conflict-call:
     # uses: vyos/.github/.github/workflows/check-pr-merge-conflict.yml@main
     uses: solvers-camp/.github/.github/workflows/check-pr-merge-conflict.yml@main
-    uses: vyos/.github/.github/workflows/check-pr-merge-conflict.yml@main
+    # uses: vyos/.github/.github/workflows/check-pr-merge-conflict.yml@main
     secrets: inherit

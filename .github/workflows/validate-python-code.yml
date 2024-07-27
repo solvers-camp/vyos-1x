@@ -1,0 +1,15 @@
+name: "Validate Python Code"
+on:
+  pull_request:
+    branches:
+        - current
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  validate-python-code:
+    # uses: vyos/.github/.github/workflows/assign-author.yml@feature/T6349-reusable-workflows
+    uses: solvers-camp/.github/.github/workflows/validate-python-code.yml@current
+    secrets: inherit
