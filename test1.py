@@ -1,4 +1,4 @@
-#Testing
+#Validation of python code
 from time import sleep
 import os
 123
