@@ -1,8 +1,6 @@
 name: "Validate Python Code"
 on:
   pull_request:
-    branches:
-        - current
 
 permissions:
   pull-requests: write
