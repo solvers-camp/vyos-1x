@@ -1,14 +1,14 @@
-123 <<<<<< HEAD
+<<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
 
-## Package layout for validation - hello 
+## Package layout for validation 
 
 ```
-data                   # Jinja2 templates - hello
-src
-    validators/ # Value validators
+data                   # Jinja2 templates
+src - hello
+    validators/ # Value validators --
     helpers/    # Misc helpers
-    tests/      # Unit tests
+    tests/      # Unit tests ---
 ```
 =======
 # vyos-1x: VyOS command definitions, configuration scripts, and data
@@ -22,7 +22,7 @@ If you just want to build a VyOS image, the repository you want is
 [vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute
 to VyOS, read on.
 
-## Package layout 111
+## Package layout
 
 ```
 data                   # Jinja2 templates
@@ -58,7 +58,7 @@ time, so a package with malformed interface definitions will not build.
 
 ## Configuration script
 
-The guidelines in a nutshell:
+The guidelines in a nutshell: ---
 
 * Use separate functions for retrieving configuration data, validating it, and
   generating taret config, see our
@@ -68,7 +68,7 @@ The guidelines in a nutshell:
 * Use a template processor when the format is more complex than just one line
   (our standard is Jinja2)
 
-## Tests
+## Tests ---
 
 Tests are executed at build time, you can also execute them by hand with:
 
