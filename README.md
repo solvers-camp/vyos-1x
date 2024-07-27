@@ -78,7 +78,7 @@ pipenv shell
 make test
 ```
 
-### Runtime (Smoke Tests)
+### Runtime (Smoke-Tests)
 
 Runtime tests are executed by the CI system on a running VyOS instance inside
 QEMU. The testcases can be found inside the smoketest subdirectory which will
