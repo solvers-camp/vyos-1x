@@ -1,4 +1,4 @@
-222<<<<<< HEAD
+<<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
 
 ## Package layout for validation 
@@ -8,7 +8,7 @@ data                   # Jinja2 templates
 src - hello
     validators/ # Value validators
     helpers/    # Misc helpers
-    tests/      # Unit tests
+    tests/      # Unit tests ---
 ```
 =======
 # vyos-1x: VyOS command definitions, configuration scripts, and datas
