@@ -1,9 +1,10 @@
-name: "Validate Python Code"
+name: Validate python code using black and ruff
 
 on:
   pull_request:
     branches:
       - current
+  workflow_dispatch:
 
 permissions:
   pull-requests: write
