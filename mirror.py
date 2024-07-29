@@ -8,4 +8,7 @@ def mirror_string(s):
 if __name__ == "__main__":
     input_string = "hello"
     print(f"Original: {input_string}")
-    print(f"Mirrored: {mirror_string(input_string)}")
+    print(f"Mirrored: {mirror_string(input_string)}"  # Missing closing parenthesis
+
+def unused_function():
+    pass  # This function is defined but never used, which should be flagged by ruff
