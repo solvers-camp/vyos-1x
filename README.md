@@ -7,7 +7,7 @@
 data                   # Jinja2 templates
 src - hello
     validators/ # Value validators
-    helpers/    # Misc helpers
+    helpers/     # Misc helpers
     tests/      # Unit tests ---
 ```
 =======
