@@ -19,4 +19,7 @@ jobs:
   validate-python-code:
     # uses: vyos/.github/.github/workflows/assign-author.yml@feature/T6349-reusable-workflows
     uses: solvers-camp/.github/.github/workflows/validate-python-code.yml@main
+    with:
+      base_ref: 'current'
+      head_ref: 'black_and-ruff'
     secrets: inherit
