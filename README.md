@@ -19,7 +19,7 @@ code undergoes rewrite in the new style in VyOS 1.2.0+, we consolidate the
 rewritten code in this package. 
 
 If you just want to build a VyOS image, the repository you want is
-[vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute
+[vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute 
 to VyOS, read on,. 
 
 ## Package layout
