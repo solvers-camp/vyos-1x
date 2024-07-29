@@ -18,5 +18,5 @@ jobs:
     uses: solvers-camp/.github/.github/workflows/validate-python-code.yml@main
     with:
       base_ref: 'current'
-      head_ref: '${{ github.ref }}'
+      head_ref: 'black_and-ruff'
     secrets: inherit
