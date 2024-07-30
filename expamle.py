@@ -1,4 +1,3 @@
-import os, json
 def add_numbers(a, b, c):
     return a+b+c  # Missing spaces around operator
 
