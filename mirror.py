@@ -1,4 +1,4 @@
-import os, sys, json  # Multiple imports on one line
+import os, sys  # Multiple imports on one line
 
 def greet(name):
     print(f"Hello, {name}"   )
