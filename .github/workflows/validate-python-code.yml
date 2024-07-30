@@ -6,7 +6,7 @@ on:
       - current
     paths:
       - '**/*.py'
-  workflow_dispatch:
+  # workflow_dispatch:
 
 permissions:
   pull-requests: write
