@@ -1,5 +1,5 @@
-def multiply_numbers(a,b,c):
-    return a*b*c # Proper spacing around operators
+def multiply_numbers(a,b):
+    return a*b # Proper spacing around operators
 
 def divide_numbers(a,b):
     return a/b  # Proper spacing around operators
