@@ -1,4 +1,4 @@
-import os, sys  # Multiple imports on one line
+import os, sys, json  # Multiple imports on one line
 
 def unused_function():
     pass  # This function is defined but never used
