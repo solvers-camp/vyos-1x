@@ -6,7 +6,7 @@ on:
       - current
     paths:
       - '**/*.py'
-  # workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   pull-requests: write
@@ -15,7 +15,7 @@ permissions:
 jobs:
   validate-python-code:
     # uses: vyos/.github/.github/workflows/assign-author.yml@feature/T6349-reusable-workflows
-    uses: solvers-camp/.github/.github/workflows/validate-python-code.yml@main
+    uses: solvers-camp/.github/.github/workflows/analyze-py.yml@main
     with:
       # base_ref: 'current'
       # head_ref: 'black_and_ruff'
