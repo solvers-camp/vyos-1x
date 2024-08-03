@@ -1,4 +1,4 @@
-name: Validate python code using black and ruff
+name: Analyze python
 
 on:
   pull_request:
@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  validate-python-code:
+  anakyze-python:
     # uses: vyos/.github/.github/workflows/assign-author.yml@feature/T6349-reusable-workflows
     uses: solvers-camp/.github/.github/workflows/analyze-py.yml@main
     # with:
