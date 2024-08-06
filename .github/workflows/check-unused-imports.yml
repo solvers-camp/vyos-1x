@@ -1,9 +1,12 @@
 name: Check for unused imports using Pylint
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - current
-      - sagitta
+    paths:
+      - '**'
+      - '!.github/**'
+      - '!**/*.md'
   workflow_dispatch:
 
 permissions:
