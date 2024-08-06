@@ -1,5 +1,5 @@
 from os import path  # This is an unused import
-# import re
+import re
 
 
 def hello_world():
