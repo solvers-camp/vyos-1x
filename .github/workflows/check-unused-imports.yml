@@ -3,7 +3,11 @@ on:
   pull_request:
     branches:
       - current
-      - sagitta
+    paths:
+      # - '**'
+      # - '!.github/**'
+      # - '!**/*.md'
+      - '**/*.py'
   workflow_dispatch:
 
 permissions:
