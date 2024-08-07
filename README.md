@@ -54,7 +54,7 @@ intentionally does not support embedded shell scripts, default values, and value
 Configuration interface definitions must conform to the schema found in
 `schema/interface_definition.rng` and operational command definitions must
 conform to `schema/op-mode-definition.rng`. Schema checks are performed at build
-time, so a package with malformed interface definitions will not build.
+time, so a package with malformed interface definition will not build.
 
 ## Configuration script
 
@@ -70,7 +70,7 @@ The guidelines in a nutshell: ---
 
 ## Tests
 
-Tests are executed at build time, you can also execute them by hand with:
+Test are executed at build time, you can also execute them by hand with:
 
 ```
 pipenv install --dev
