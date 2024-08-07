@@ -70,7 +70,7 @@ The guidelines in a nutshell: ---
 
 ## Tests
 
-Tests are executed at build time, you can also execute them by hand with:
+Test are executed at build time, you can also execute them by hand with:
 
 ```
 pipenv install --dev
