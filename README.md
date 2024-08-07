@@ -39,7 +39,7 @@ src
     completion/ # Completion helpers
     validators/ # Value validators
     helpers/    # Misc helpers
-    migration-scripts # Migration scripts
+    migration-scripts  # Migration scripts
     tests/      # Unit tests
 ```
 
