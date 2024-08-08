@@ -11,7 +11,7 @@ permissions:
 jobs:
   check-unused-imports:
     # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
-    uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@current
+    uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
     secrets: inherit
 
   add-pr-comment:
