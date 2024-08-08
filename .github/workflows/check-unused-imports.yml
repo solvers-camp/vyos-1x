@@ -8,6 +8,9 @@ permissions:
   pull-requests: write
   contents: read
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   check-unused-imports:
     # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
@@ -18,11 +21,11 @@ jobs:
     needs: check-unused-imports
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request head
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
+      # - name: Checkout pull request head
+      #   uses: actions/checkout@v3
+      #   with:
+      #     ref: ${{ github.event.pull_request.head.ref }}
+      #     repository: ${{ github.event.pull_request.head.repo.full_name }}
 
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
