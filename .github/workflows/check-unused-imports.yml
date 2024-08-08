@@ -1,15 +1,8 @@
 name: Check for unused imports using Pylint
 on:
-  workflow_call:
   pull_request:
     branches:
       - current
-    paths:
-      # - '**'
-      # - '!.github/**'
-      # - '!**/*.md'
-      - '**/*.py'
-  workflow_dispatch:
 
 permissions:
   pull-requests: write
@@ -17,10 +10,13 @@ permissions:
 
 jobs:
   check-unused-imports:
+    # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
+    uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@current
+    secrets: inherit
+
+  add-pr-comment:
+    needs: check-unused-imports
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      contents: read
     steps:
       - name: Checkout pull request head
         uses: actions/checkout@v3
@@ -28,40 +24,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
 
-      - uses: dorny/paths-filter@v3
-        id: py-changes
+      - name: Add PR comment
+        uses: mshick/add-pr-comment@v2
         with:
-          filters: |
-            src:
-              - 'src/**'
-
-      - name: Set up Python
-        if: steps.py-changes.outputs.src == 'true'
-        uses: actions/setup-python@v3
-        with:
-          python-version: 3.11
-
-      - name: Install dependencies
-        if: steps.py-changes.outputs.src == 'true'
-        run: |
-          python -m pip install --upgrade pip
-          pip install pylint
-
-      - name: Check unused imports (pylint)
-        if: steps.py-changes.outputs.src == 'true'
-        run: |
-          pylint_files=$(git ls-files *.py src/migration-scripts)
-          set +e
-          output=$(pylint --disable=all --enable=W0611 --output-format=json $pylint_files 2>&1)
-          exit_code=$?
-          set -e
-          if [[ $exit_code -eq 0 ]]; then
-            echo "error_message=No issues in unused-imports" >> $GITHUB_ENV
-            echo "No issues in unused-imports"
-          else
-            formatted_output=$(echo "$output" | jq -r '.[] | "\(.type): \(.message) in \(.path):\(.line)"')
-            echo "$formatted_output"
-            formatted_env_output=$(echo "$formatted_output" | tr '\n' '. ')
-            echo "error_message=${formatted_env_output}" >> $GITHUB_ENV
-            exit 1
-          fi
+          message: |-
+            ${{ needs.check-unused-imports.outputs.error_message == 'No issues in unused-imports' && '👍' || '❌' }}
+            ${{ needs.check-unused-imports.outputs.error_message }}
+          message-id: "UNUSED_IMPORTS_VALIDATION"
+          allow-repeats: false
