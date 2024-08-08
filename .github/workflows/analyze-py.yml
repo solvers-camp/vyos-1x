@@ -1,0 +1,24 @@
+name: Analyze python
+
+on:
+  pull_request:
+    branches:
+      - current
+    paths:
+      - '**/*.py'
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  anakyze-python:
+    # uses: vyos/.github/.github/workflows/assign-author.yml@feature/T6349-reusable-workflows
+    uses: solvers-camp/.github/.github/workflows/analyze-py.yml@main
+    # with:
+    #   # base_ref: 'current'
+    #   # head_ref: 'black_and_ruff'
+    #   base_ref: ${{ github.event.pull_request.base.ref || github.repository.default_branch }}
+    #   head_ref: ${{ github.event.pull_request.head.ref || github.ref_name }}
+    secrets: inherit
