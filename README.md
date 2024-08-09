@@ -30,7 +30,7 @@ debian                 # Our package build system
 interface-definitions  # Configuration interface (i.e. conf mode command)  definitions
 op-mode-definitions    # Operational command definitions
 python                 # Programming library for accessing the config frontend/backend
-schema                 # XML schema definition for conf mode and op mode commands
+schema                 # XML schema definition for conf mode and op mode command
 scripts                # Build-time scripts
 smoketest              # Python Unittests for the CLI and system
 src
