@@ -8,9 +8,6 @@ permissions:
   pull-requests: write
   contents: read
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   #  check-unused-imports:
   #   # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
