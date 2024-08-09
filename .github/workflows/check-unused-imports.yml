@@ -23,8 +23,8 @@ jobs:
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
-          message: HELLO TESTING PAT CHECK
+          message: HELLO TESTING PAT CHECK VIJ
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
           refresh-message-position: true
-          repo-token: ${{ secrets.PAT }}
+          repo-token: ${{ secrets.REPO_PAT_VIJ }}
