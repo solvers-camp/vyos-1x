@@ -21,12 +21,6 @@ jobs:
     needs: check-unused-imports
     runs-on: ubuntu-latest
     steps:
-      # - name: Checkout pull request head
-      #   uses: actions/checkout@v3
-      #   with:
-      #     ref: ${{ github.event.pull_request.head.ref }}
-      #     repository: ${{ github.event.pull_request.head.repo.full_name }}
-
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
@@ -35,3 +29,4 @@ jobs:
             ${{ needs.check-unused-imports.outputs.error_message }}
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
+          refresh-message-position: true
