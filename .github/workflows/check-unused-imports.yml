@@ -26,7 +26,7 @@ jobs:
       - name: Check if REPO_PAT_VIJ is set
         run: |
           if [ -z "${{ secrets.PAT }}" ]; then
-            echo "PAT is not set"
+            echo "PAT is  not set"
             exit 1
           else
             echo "PAT is set"
