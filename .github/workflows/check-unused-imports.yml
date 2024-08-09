@@ -20,6 +20,8 @@ jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
@@ -28,3 +30,4 @@ jobs:
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
           refresh-message-position: true
+          repo-token:${{ secrets.PAT_TOKEN }}
