@@ -29,3 +29,6 @@ jobs:
           message: HELLO
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
+          name: Check for unused imports using Pylint
+          refresh-message-position: true
+          repo-token: ${{ secrets.PAT }}
