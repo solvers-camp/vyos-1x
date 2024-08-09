@@ -30,7 +30,7 @@ debian                 # Our package build system
 interface-definitions  # Configuration interface (i.e. conf mode command)  definitions
 op-mode-definitions    # Operational command definitions
 python                 # Programming library for accessing the config frontend/backend
-schema                 # XML schema definition for conf mode and op mode commands
+schema                 # XML schema definition for conf mode and op mode command
 scripts                # Build-time scripts
 smoketest              # Python Unittests for the CLI and system
 src
@@ -53,7 +53,7 @@ intentionally does not support embedded shell scripts, default value, and value
 
 Configuration interface definitions must conform to the schema found in
 `schema/interface_definition.rng` and operational command definitions must
-conform to `schema/op-mode-definition.rng`. Schema checks are performed at build
+conform to `schema/op-mode-definition.rng`. Schema checks are performed at builds
 time, so a package with malformed interface definition will not build.
 
 ## Configuration script
