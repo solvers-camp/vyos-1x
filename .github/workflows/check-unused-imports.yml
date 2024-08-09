@@ -26,9 +26,8 @@ jobs:
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
-          message: HELLO
+          message: HELLO TESTING 
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
-          name: Check for unused imports using Pylint
           refresh-message-position: true
           repo-token: ${{ secrets.PAT }}
