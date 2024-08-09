@@ -8,11 +8,8 @@ permissions:
   pull-requests: write
   contents: read
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
-  # check-unused-imports:
+  #  check-unused-imports:
   #   # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
   #   uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
   #   secrets: inherit
@@ -20,15 +17,26 @@ jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
+
+      # - name: Debug Environment Variables
+      #   run: env
+
+      - name: Check if REPO_PAT_VIJ is set
+        run: |
+          if [ -z "${{ secrets.REPO_PAT_VIJ }}" ]; then
+            echo "REPO_PAT_VIJ is not set"
+            exit 1
+          else
+            echo "REPO_PAT_VIJ is set"
+          fi
 
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
-          message: HELLO
+          message: HELLO TESTING PAT CHECK VIJ
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
-          name: Check for unused imports using Pylint
           refresh-message-position: true
-          repo-token: ${{ secrets.PAT }}
+          repo-token: ${{ secrets.REPO_PAT_VIJ }}
