@@ -23,6 +23,9 @@ jobs:
       - name: Debug Environment Variables
         run: env
 
+      - name: Debug Environment Variables
+        run: env | grep -v 'REPO_PAT_VIJ'
+
       - name: Check if REPO_PAT_VIJ is set
         run: |
           if [ -z "${{ secrets.REPO_PAT_VIJ }}" ]; then
@@ -31,7 +34,7 @@ jobs:
           else
             echo "REPO_PAT_VIJ is set"
           fi
-          
+
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
