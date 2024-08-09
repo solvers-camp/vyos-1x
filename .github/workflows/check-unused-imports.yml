@@ -12,26 +12,23 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  check-unused-imports:
-    # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
-    uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
-    secrets: inherit
+  # check-unused-imports:
+  #   # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
+  #   uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
+  #   secrets: inherit
 
   add-pr-comment:
-    needs: check-unused-imports
     runs-on: ubuntu-latest
     steps:
-      # - name: Checkout pull request head
-      #   uses: actions/checkout@v3
-      #   with:
-      #     ref: ${{ github.event.pull_request.head.ref }}
-      #     repository: ${{ github.event.pull_request.head.repo.full_name }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
-          message: |-
-            ${{ needs.check-unused-imports.outputs.error_message == 'No issues in unused-imports' && '👍' || '❌' }}
-            ${{ needs.check-unused-imports.outputs.error_message }}
+          message: HELLO
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
+          refresh-message-position: true
+          repo-token: ${{ secrets.PAT_TOKEN }}
+          
