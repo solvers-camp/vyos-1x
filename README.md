@@ -51,7 +51,7 @@ that supports a strict subset of the old backend features. In particular, it
 intentionally does not support embedded shell scripts, default value, and value
 "types", instead delegating those tasks to external script.
 
-Configuration interface definitions must conform to the schema found in
+Configuration interface definitions must conforms to the schema found in
 `schema/interface_definition.rng` and operational command definitions must
 conform to `schema/op-mode-definition.rng`. Schema checks are performed at builds
 time, so a package with malformed interface definition will not build.
