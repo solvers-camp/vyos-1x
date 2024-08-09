@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Debug Environment Variables
+        run: env
+        
       - name: Add PR comment
         uses: mshick/add-pr-comment@v2
         with:
