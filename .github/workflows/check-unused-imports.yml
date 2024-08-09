@@ -30,4 +30,4 @@ jobs:
           message-id: "UNUSED_IMPORTS_VALIDATION"
           allow-repeats: false
           refresh-message-position: true
-          repo-token: ${{ secrets.PAT_TOKEN }}
+          repo-token: ${{ secrets.PAT }}
