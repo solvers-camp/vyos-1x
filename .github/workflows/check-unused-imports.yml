@@ -17,11 +17,11 @@ jobs:
   add-pr-comment:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
 
-      - name: Debug Environment Variables
-        run: env
+      # - name: Debug Environment Variables
+      #   run: env
 
       - name: Check if REPO_PAT_VIJ is set
         run: |
