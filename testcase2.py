@@ -1,4 +1,5 @@
 # example.py
+import os
 
 def main():
     print("Hello")
