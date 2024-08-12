@@ -2,8 +2,6 @@
 
 import os
 import sys
-import json
-# import math
 
 def main():
     print("Hello, World!")
