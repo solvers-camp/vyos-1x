@@ -65,7 +65,7 @@ The guidelines in a nutshell: ---
   [documentation](https://docs.vyos.io/en/latest/contributing/development.html#python)
   for the common structure
 * Use the `get_config_dict()` API as much as possible when retrieving values from the CLI
-* Use a template processor when the format is more complex than just one line
+* Use a template processor, when the format is more complex than just one line
   (our standards is Jinja2)
 
 ## Tests
@@ -81,6 +81,6 @@ make test
 ### Runtime (Smoke-Tests)
 
 Runtime tests are executed by the CI system on a running VyOS instance inside
-QEMU. The testcases can be found inside the smoketest subdirectory which will
+QEMU. The testcases can be found inside the smoketest subdirectory, which will
 be placed into the vyos-1x-smoketest package.
 >>>>>>> 3302605251da0feb7c1b0942e9cb4391672d75bf
