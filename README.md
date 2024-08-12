@@ -65,7 +65,7 @@ The guidelines in a nutshell: ---
   [documentation](https://docs.vyos.io/en/latest/contributing/development.html#python)
   for the common structure
 * Use the `get_config_dict()` API as much as possible when retrieving values from the CLI
-* Use a template processor when the format is more complex than just one line
+* Use a template processor, when the format is more complex than just one line
   (our standards is Jinja2)
 
 ## Tests
