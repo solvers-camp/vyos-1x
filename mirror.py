@@ -1,7 +1,4 @@
 def mirror_string(s):
-    """
-    This function takes a string s and returns its mirror image.
-    """
     return s[::-1]
 
 # Example usage
