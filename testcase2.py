@@ -1,7 +1,9 @@
 # example.py
+import os
 
 def main():
-    print("Hello")
+    print("Hello 1")
+    print("Hello 2")
 
 
 if __name__ == "__main__":
