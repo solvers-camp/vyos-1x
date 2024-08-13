@@ -6,12 +6,13 @@ on:
         - closed
       branches:
         - current
+        - circinus
     workflow_dispatch:
 
 jobs:
   trigger-PR:
     # uses: vyos/.github/.github/workflows/trigger-pr.yml@current
-    uses: solvers-camp/.github/.github/workflows/trigger-pr.yml@main
+    uses: solvers-camp/.github/.github/workflows/trigger-pr-using-diff.yml@main
     with:
       source_branch: 'current'
       target_branch: 'circinus'

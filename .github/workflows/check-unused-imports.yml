@@ -3,15 +3,39 @@ on:
   pull_request:
     branches:
       - current
-      - sagitta
-  workflow_dispatch:
 
 permissions:
   pull-requests: write
   contents: read
 
 jobs:
-  check-unused-imports:
-    #uses: vyos/.github/.github/workflows/check-unused-imports.yml@feature/T6349-reusable-workflows
-    uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
-    secrets: inherit
+  #  check-unused-imports:
+  #   # uses: vyos/.github/.github/workflows/check-unused-imports.yml@current
+  #   uses: solvers-camp/.github/.github/workflows/check-unused-imports.yml@main
+  #   secrets: inherit
+
+  add-pr-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # - name: Debug Environment Variables
+      #   run: env
+
+      - name: Check if REPO_PAT_VIJ is set
+        run: |
+          if [ -z "${{ secrets.PAT }}" ]; then
+            echo "PAT is not set"
+            exit 1
+          else
+            echo "PAT is set"
+          fi
+      - name: Add PR comment
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: HELLO TESTING PAT CHECK IN VYOS
+          message-id: "UNUSED_IMPORTS_VALIDATION"
+          allow-repeats: false
+          refresh-message-position: true
+          repo-token: ${{ secrets.PAT }}
