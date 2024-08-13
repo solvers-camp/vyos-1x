@@ -1,7 +1,7 @@
 # testcase4.py
 
 def greet(name):
-    return f"Hello, {name}!"
+    return f"Hello, {name}"
 
 
 def main():
