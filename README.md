@@ -1,7 +1,7 @@
 <<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
 
-## Package layout for validation 
+## Package layout for validation
 
 ```
 data                   # Jinja2 templates
@@ -20,7 +20,7 @@ rewritten code in this package.
 
 If you just want to build a VyOS image, the repository you want is
 [vyos-build](https://github.com/vyos/vyos-build). If you also want to contribute
-to VyOS, read on,. 
+to VyOS, read on,.
 
 ## Package layout
 
@@ -54,7 +54,7 @@ intentionally does not support embedded shell scripts, default value, and value
 Configuration interface definitions must conforms to the schema found in
 `schema/interface_definition.rng` and operational command definitions must
 conform to `schema/op-mode-definition.rng`. Schema checks are performed at builds
-time, so a package with malformed interface definition will not build.
+time, so a package with malformed interface definitions will not build.
 
 ## Configuration script
 
