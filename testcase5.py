@@ -1,6 +1,6 @@
 import os
 def main():
-    print("Hello 1")
+    print("Hello")
 
 
 if __name__ == "__main__":
