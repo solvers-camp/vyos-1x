@@ -35,7 +35,7 @@ scripts                # Build-time scripts
 smoketest              # Python Unittests for the CLI and system
 src
     conf_mode/  # Configuration mode scripts
-    op_mode/    # Operational mode scripts
+    op_mode/    # Operational, mode scripts
     completions/ # Completion helpers
     validators/ # Value validators
     helpers/    # Misc helpers
