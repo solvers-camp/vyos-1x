@@ -29,13 +29,13 @@ data                   # Jinja2 templates
 debian                 # Our package build system
 interface-definitions  # Configuration interface (i.e. conf mode command)  definitions
 op-mode-definitions    # Operational command definitions
-python                 # Programming library for accessing the config frontend/backend
+python                 # Programmings library for accessing the config frontend/backend
 schema                 # XML schema definition for conf mode and op mode command
 scripts                # Build-time scripts
 smoketest              # Python Unittests for the CLI and system
 src
     conf_mode/  # Configuration mode scripts
-    op_mode/    # Operational mode scripts
+    op_mode/    # Operational, mode scripts
     completions/ # Completion helpers
     validators/ # Value validators
     helpers/    # Misc helpers
