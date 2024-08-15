@@ -1,5 +1,7 @@
 # testcase4.py
 
+import math
+
 def greet(name):
     return f"Hello, {name}"
 
