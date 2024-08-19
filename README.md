@@ -11,7 +11,7 @@ src - hello
     tests/       # Unit tests ---
 ```
 =======
-# vyos-1x: VyOS command definitions,  configuration scripts,  and datas
+# vyos-1x: VyOS command definitions,  configuration scripts,  and dated
 
 VyOS 1.1.x had its codebase split into way too many submodules for no good
 reason, which made it hard to navigate or write meaningful changelogs. As the
@@ -82,5 +82,5 @@ make test
 
 Runtime tests are executed by the CI system on a running VyOS instance inside
 QEMU. The testcases can be found inside the smoketest-subdirectory, which will
-be placed into the vyos-1x smoketest package.
+be placed into the vyos-1x-smoketest package.
 >>>>>>> 3302605251da0feb7c1b0942e9cb4391672d75bf
