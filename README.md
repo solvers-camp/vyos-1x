@@ -1,6 +1,6 @@
   <<<<<< HEAD
 # vyos-workflow-test-temp: Validates the common github workflows
-12345a
+123
 
 ## Package layout for validation 
 
