@@ -16,10 +16,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Delete branch
-        env:
-          GH_TOKEN: ${{ secrets.PAT }}
         run: |
           branch=${{ github.event.pull_request.head.ref }}
           repo=${{ github.repository }}
-          echo ${GH_TOKEN} | gh auth login --with-token
+          unset GH_TOKEN 
+          echo "${{ secrets.PAT }}" | gh auth login --with-token
           gh api -X DELETE "repos/${repo}/git/refs/heads/${branch}"
