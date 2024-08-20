@@ -6,9 +6,6 @@ on:
     branches:
         - circinus
 
-env:
-    GH_TOKEN: ${{ secrets.PAT }}
-    
 jobs:
   delete_branch:
     if: ${{ github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'mirror/bp/') }}
@@ -20,7 +17,7 @@ jobs:
 
       - name: Delete branch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT }}
         run: |
           branch=${{ github.event.pull_request.head.ref }}
           repo=${{ github.repository }}
