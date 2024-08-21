@@ -1,7 +1,7 @@
 # example_with_imports.py
 
 import os
-import sys
+# import sys
 import math
 import random
 
