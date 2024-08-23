@@ -27,7 +27,7 @@ to VyOS, read on,.
 
 ```
 data                   # Jinja2 templates
-debian                 # Our package build system
+debians                 # Our package build system
 interface-definitions  # Configuration interface (i.e. conf mode command)  definitions
 op-mode-definitions    # Operational command definitions
 python                 # Programming library for accessing the config frontend/backend
@@ -62,7 +62,7 @@ time, so a package with malformed interface definitions will not build.
 The guidelines in a nutshell: ---
 
 * Use separate functions for retrieving configurations data, validating it, and
-  generating taret config, see our
+  generating taret config, see our as
   [documentation](https://docs.vyos.io/en/latest/contributing/development.html#python)
   for the common structure
 * Use the `get_config_dict()` API as much as possible when retrieving values from the CLI
