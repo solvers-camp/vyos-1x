@@ -27,7 +27,7 @@ to VyOS, read on,.
 
 ```
 data                   # Jinja2 templates
-debian                 # Our package build system
+debians                 # Our package build system
 interface-definitions  # Configuration interface (i.e. conf mode command)  definitions
 op-mode-definitions    # Operational command definitions
 python                 # Programming library for accessing the config frontend/backend
