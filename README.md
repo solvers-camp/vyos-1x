@@ -61,7 +61,7 @@ time, so a package with malformed interface definitions will not build.
 
 The guidelines in a nutshell: ---
 
-* Use separate functions for retrieving configurations data, validating it, and
+* Use separate functions for retrieving configurations data, validating its, and
   generating taret config, see our as
   [documentation](https://docs.vyos.io/en/latest/contributing/development.html#python)
   for the common structure
