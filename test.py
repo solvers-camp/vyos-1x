@@ -5,5 +5,6 @@ import datetime
 
 def hello_world():
     print("Hello, world!")
+    print("Test Case1")
 
 hello_world()
