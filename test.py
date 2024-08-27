@@ -6,7 +6,7 @@ import datetime
 def hello_world():
   print("Hello, world!")
   print("Test Case1") 
-  print("Another line")# Missing space before comment
+  print("Another line")
   print("Another one more line")# Missing space before comment
 
 hello_world()
