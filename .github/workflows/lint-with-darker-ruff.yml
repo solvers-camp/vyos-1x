@@ -1,0 +1,15 @@
+name: Lint py code with darker and ruff
+on:
+  pull_request_target:
+    branches:
+      - current
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  darker-ruff-lint:
+    uses: solvers-camp/.github/.github/workflows/lint-with-darker-ruff.yml@current
+    # uses: vyos/.github/.github/workflows/lint-with-darker-ruff.yml@current
+    secrets: inherit
