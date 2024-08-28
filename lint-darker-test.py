@@ -1,4 +1,4 @@
-import os, sys, datetime, date
+import os, sys, datetime, date, requests
 import re, csv, request
 
 def example_function():
@@ -15,7 +15,7 @@ def example_function():
 def another_function():
     print("Another function")
     if True:
-        print("This line is fine")
+        print("This line is fine hello")
     else:
       print("This line is not fine 123")
       print("Another line with trailing whitespace ")
