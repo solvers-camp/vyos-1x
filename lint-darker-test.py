@@ -1,5 +1,6 @@
 import os, sys, datetime, date, requests
 import date
+import re
 
 def example_function():
   print("This is an example function with formatting and linting issues")
@@ -16,6 +17,7 @@ def another_function():
     print("Another function")
     if True:
         print("This line is fine hello")
+        print("This line is fine hello 34")
     else:
       print("This line is not fine 123")
       print("Another line with trailing whitespace ")
