@@ -1,6 +1,6 @@
 name: Lint py code with darker and ruff
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - current
 
