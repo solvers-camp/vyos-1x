@@ -1,10 +1,6 @@
-import re
-import math, date, datetime
-import response
-import csv
-
-def hello_world():
-   print("Hello, world!")
-   print("1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890")
-
-hello_world()
+def example_function():
+    print("This line exceeds the 30 character limit and should be flagged by the linter.")
+    if True:
+        print("This line is indented with 4 spaces.")
+    else:
+        print("This line is also indented with 4 spaces.")
