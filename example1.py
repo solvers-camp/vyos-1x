@@ -1,3 +1,5 @@
+import json
+
 def example_function():
     print("This")
     if True:
