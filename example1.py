@@ -1,6 +1,6 @@
 def example_function():
-    print("This line exceeds the 30 characters limit and should be flagged by the linter.")
+    print("This")
     if True:
-        print("This line is indented with 4 spaces vijai.")# commenting error
+        print("This line is indented with 4 spaces vijai.")
     else:
         print("This line is also indented with 4 spaces.")
