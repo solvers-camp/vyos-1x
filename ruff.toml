@@ -1,5 +1,5 @@
 # Same as Black
-line-length = 25
+line-length = 30
 indent-width = 4
 
 # Assume Python 3.11
